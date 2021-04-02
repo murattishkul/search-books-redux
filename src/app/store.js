@@ -1,8 +1,12 @@
-import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import cardListReducer from "../features/booksList/cardListSlice";
+import suggestionsReducer from "../features/search/suggestionsSlice";
+import currentBookReducer from "../features/booksList/currentBookSlice";
+import { configureStore } from "@reduxjs/toolkit";
 
 export default configureStore({
   reducer: {
-    counter: counterReducer,
+    cardList: cardListReducer,
+    suggestions: suggestionsReducer,
+    currentBook: currentBookReducer,
   },
 });

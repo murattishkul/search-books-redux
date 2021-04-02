@@ -1,0 +1,59 @@
+.title {
+  font-weight: 300;
+  @media (max-width: 500px) {
+    font-size: 1rem;
+  }
+}
+.date {
+  font-weight: 300;
+  margin: 6px 0;
+  @media (max-width: 500px) {
+    font-size: 0.8rem;
+  }
+}
+.description {
+  font-weight: 300;
+  @media (max-width: 500px) {
+    font-size: 0.75rem;
+  }
+}
+.actions {
+  color: #333;
+  display: flex;
+  align-items: center;
+  svg {
+    transform: translateY(2px);
+    margin-right: 5px;
+  }
+  @media (max-width: 500px) {
+    flex-direction: column;
+    & button {
+      width: 100%;
+      margin-bottom: 4px;
+      font-size: 0.65rem;
+    }
+  }
+}
+.action {
+  margin: 0 5px;
+  padding: 8px 14px;
+  background: rgba(155, 155, 155, 0.2);
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #fff;
+  outline: 0;
+  font-weight: 300;
+  :hover {
+    opacity: 0.8;
+  }
+  :active {
+    background: #900603;
+  }
+}
+
+h3,
+h4,
+p,
+div {
+  text-align: center;
+}
